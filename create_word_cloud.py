@@ -7,7 +7,7 @@ from os import listdir
 from os.path import isfile, join
 
 stopwords_filename = 'data/stopwords.txt'
-font_filename = 'fonts/STFangSong.ttf'
+font_filename = 'fonts/STZHONGS.ttf'
 template_dir = 'data/templates/'
 
 def main(input_filename):
