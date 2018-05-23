@@ -40,9 +40,11 @@ def do_job(file, words_stat):
 
         bimg = imread(background_picture_filename)
         wordcloud = WordCloud(font_path=font_filename,
+                              width=900,
+                              height=600,
                               background_color='white',
-                              mask=bimg,
-                              max_font_size=600,
+                              # mask=bimg,
+                              max_font_size=170,
                               random_state=100)
         wordcloud = wordcloud.fit_words(dict(words_stat.head(4000).itertuples(index=False)))
 
