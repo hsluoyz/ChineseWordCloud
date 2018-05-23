@@ -45,8 +45,8 @@ def main(input_filename):
             wordcloud=WordCloud(font_path=font_filename,background_color='white',mask = bimg,max_font_size=600,random_state=100)
             wordcloud=wordcloud.fit_words(dict(words_stat.head(4000).itertuples(index=False)))
 
-            bimgColors=ImageColorGenerator(bimg)
-            wordcloud.recolor(color_func=bimgColors)
+            # bimgColors=ImageColorGenerator(bimg)
+            # wordcloud.recolor(color_func=bimgColors)
 
             output_filename = prefix + '_' + input_prefix + '.png'
 
