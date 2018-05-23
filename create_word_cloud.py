@@ -30,6 +30,10 @@ def main(input_filename):
 
     print '# of different words =', len(words_stat)
 
+    print '************************************'
+    print words_stat
+    print '************************************'
+
     do_job("love.png", words_stat)
 
 
