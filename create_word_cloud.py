@@ -53,11 +53,13 @@ def main(input_filename):
             print 'Saving', output_filename
             wordcloud.to_file(output_filename)
 
+
 if __name__ == '__main__':
-    if len(sys.argv) == 2:
-        main(sys.argv[1])
-    else:
-        print '[usage] <input>'
+    main("example.txt")
+    # if len(sys.argv) == 2:
+    #     main(sys.argv[1])
+    # else:
+    #     print '[usage] <input>'
 
 
 
